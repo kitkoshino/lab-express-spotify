@@ -98,7 +98,13 @@ form input {
   padding: 0;
 }
 
-
+.album-card-bigger {
+  width: 400px;
+  height: 450px;
+  background-color: rgb(29, 29, 29);
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
 
 a {
   color: white;
