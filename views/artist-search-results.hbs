@@ -7,14 +7,17 @@
     <div class="albuns-container">
 
       {{#each resultArtist}}
+       
       <div class="album-card">
         <li>
-          <h4>{{name}}</h4>
+          <img src="{{images.[0].url}}" alt="" style="width: 200px; height: 200px; border-radius: 10px 10px 0 0"> 
         </li>
-        <li>
-        <img src="{{images.[0].url}}" alt="" style="width: 200px; height: 200px"> 
-        </li>
-        <a href="/albums/{{id}}">View Albums</a>
+        <div class="album-name-container">
+          <li>
+            <h4>{{name}}</h4>
+          </li>
+          <button class="album-button"><a href="/albums/{{id}}">View Albums</a></button>
+        </div>
       </div>
       {{/each}}
 
