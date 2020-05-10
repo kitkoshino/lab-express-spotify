@@ -1,9 +1,23 @@
-{{#each resultArtist}}
-<li>
-  {{name}}
-</li>
-<li>
- <img src="{{images.[0].url}}" alt=""> 
-</li>
-<a href="/albums/{{id}}">View Albums</a>
-{{/each}}
+<html>
+  <head>
+      <link rel="stylesheet" href="/styles/style.css">  
+  </head>
+  <body>
+    
+    <div class="albuns-container">
+
+      {{#each resultArtist}}
+      <div class="album-card">
+        <li>
+          <h4>{{name}}</h4>
+        </li>
+        <li>
+        <img src="{{images.[0].url}}" alt="" style="width: 200px; height: 200px"> 
+        </li>
+        <a href="/albums/{{id}}">View Albums</a>
+      </div>
+      {{/each}}
+
+</div>
+  </body>
+</html>
